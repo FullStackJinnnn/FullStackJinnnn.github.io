@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>프론트엔드 개발자 구민정</title>
+	<title>웹 개발자 정석진</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -29,7 +29,7 @@
 
 	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
 		<div class="container">
-			<a class="navbar-brand" href="index.html"><span>K</span>ooMinJeong</a>
+			<a class="navbar-brand" href="index.html"><span>C</span>hungSeokjin</a>
 			<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
 				data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="oi oi-menu"></span> Menu
@@ -57,10 +57,10 @@
 				<div class="col-lg-8 col-md-6 ftco-animate d-flex align-items-center">
 					<div class="text text-center">
 						<span class="subheading">Hey! I am</span>
-						<h1>구민정</h1>
+						<h1>정석진</h1>
 						<h2>I'm a
 							<span class="txt-rotate" data-period="500"
-								data-rotate='[  "풀스택 개발자", "스타트업 개발자", "6년차"]'></span>
+								data-rotate='[  "신입 개발자", "백엔드 개발자", "항상 즐거운 개발자"]'></span>
 						</h2>
 					</div>
 				</div>
@@ -76,7 +76,7 @@
 
 	<section class="ftco-about img ftco-section ftco-no-pt ftco-no-pb" id="about-section">
 		<div class="container">
-			<div class="row d-flex no-gutters">
+			<div class="row d-flex no-gutters" style="margin-left:-40px; margin-right:-40px;">
 				<div class="col-md-6 col-lg-6 d-flex">
 					<div class="img-about img d-flex align-items-stretch">
 						<div class="overlay"></div>
@@ -90,10 +90,10 @@
 						<div class="col-md-12 heading-section ftco-animate">
 							<h1 class="big">About</h1>
 							<h2 class="mb-4">About Me</h2>
-							<p>커피와 노트북만 있다면, 언제 어디서나 즐겁게 일하는 6년차 개발자 정쿠입니다. </p>
+							<p>커피와 큰 화면만 있다면, 언제 어디서나 즐겁게 일할 수 있는 신입 개발자 정석진입니다. </p>
 							<ul class="about-info mt-4 px-md-0 px-2">
-								<li class="d-flex"><span>Name:</span> <span>구민정</span></li>
-								<li class="d-flex"><span>Address:</span> <span>성남시 분당구 정자동</span></li>
+								<li class="d-flex"><span>Name:</span> <span>정석진</span></li>
+								<li class="d-flex"><span>Address:</span> <span>성남시 분당구 구미동</span></li>
 								<li class="d-flex"><span>Email:</span> <span>cookie00421@gmail.com</span></li>
 								<li class="d-flex"><span>Phone: </span> <span>+82-10-1234-5678</span></li>
 							</ul>
@@ -121,15 +121,15 @@
 				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
 					<div class="block-18 shadow">
 						<div class="text">
-							<strong class="number" data-number="365">0</strong>
-							<span>코딩한 일수</span>
+							<strong class="number" id="codingDays" data-number="">0</strong>
+							<span>Days with Java</span>
 						</div>
 					</div>
 				</div>
 				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
 					<div class="block-18 shadow">
 						<div class="text">
-							<strong class="number" data-number="100">0</strong>
+							<strong class="number" data-number="5">0</strong>
 							<span>Complete Projects</span>
 						</div>
 					</div>
@@ -777,6 +777,43 @@
 		</svg></div>
 
 
+		<script>
+		// 시작 날짜와 현재 날짜 간의 차이를 계산하는 함수
+function updateDaysDifference() {
+    var startDate = new Date('2023-11-21');
+    var today = new Date();
+    var timeDiff = today.getTime() - startDate.getTime();
+    var daysDiff = Math.ceil(timeDiff / (1000 * 3600 * 24));
+    
+    // 해당 요소에 동적으로 출력
+    document.getElementById('codingDays').setAttribute('data-number', daysDiff);
+    document.getElementById('codingDays').innerHTML = daysDiff; // innerHTML을 사용하여 표시할 수도 있습니다.
+}
+
+// 페이지가 로드될 때와 필요한 경우 이 함수를 호출하여 업데이트합니다.
+updateDaysDifference();
+				</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery-migrate-3.0.1.min.js"></script>
 	<script src="js/popper.min.js"></script>
@@ -791,6 +828,7 @@
 	<script src="js/scrollax.min.js"></script>
 
 	<script src="js/main.js"></script>
+
 
 </body>
 
