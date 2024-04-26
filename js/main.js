@@ -441,7 +441,7 @@ $(function() {
 });
 
 
-// 시작 날짜와 현재 날짜 간의 차이를 계산하는 함수
+// 시작 날짜와 현재 날짜 간의 차이를 계산
 function updateDaysDifference() {
 	var startDate = new Date('2023-11-21');
 	var today = new Date();
@@ -450,9 +450,9 @@ function updateDaysDifference() {
 
 	// 해당 요소에 동적으로 출력
 	document.getElementById('codingDays').setAttribute('data-number', daysDiff);
-	document.getElementById('codingDays').innerHTML = daysDiff; // innerHTML을 사용하여 표시할 수도 있습니다.
+	document.getElementById('codingDays').innerHTML = daysDiff; 
 }
 
-// 페이지가 로드될 때와 필요한 경우 이 함수를 호출하여 업데이트합니다.
+
 updateDaysDifference();
 
